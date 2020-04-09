@@ -4,11 +4,7 @@ const Schema = mongoose.Schema;
 const hotelMgtSchema = new Schema({
     hotelName: {
         type: String,
-        required: true
-    },
-    roomNo : {
-        type: Number,
-        unique: true,
+        default: "Hotel Red Velvet"
     },
     price: {
         type: Number,

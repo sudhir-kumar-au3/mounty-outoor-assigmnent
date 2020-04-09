@@ -11,7 +11,9 @@ const connection = mongoose.createConnection(
   url,
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: true,
+    useCreateIndex: true
   }
 );
 autoIncrement.initialize(connection);
